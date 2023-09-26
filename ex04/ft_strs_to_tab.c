@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 19:58:31 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/26 19:59:02 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/26 20:25:26 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@
 #include <stdlib.h>
 
 void	ft_show_tab(struct s_stock_str *par);
+
 int	ft_strlen(char *str)
 {
 	int	i;
+
 	i = 0;
 	while (str[i])
 		i++;
@@ -28,6 +30,7 @@ int	ft_strlen(char *str)
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
+
 	i = 0;
 	while (src[i] != '\0')
 	{
@@ -42,6 +45,7 @@ char	*ft_strdup(char *src)
 {
 	int		i;
 	char	*dup;
+
 	i = ft_strlen(src) + 1;
 	dup = malloc(sizeof(char) * (i));
 	if (dup == NULL)
@@ -54,6 +58,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 {
 	t_stock_str	*tab;
 	int			i;
+
 	tab = (malloc(sizeof(t_stock_str) * (ac + 1)));
 	i = 0;
 	if (!tab)
