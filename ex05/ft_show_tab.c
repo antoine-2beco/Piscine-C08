@@ -6,7 +6,7 @@
 /*   By: ade-beco <ade-beco@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 19:59:58 by ade-beco          #+#    #+#             */
-/*   Updated: 2023/09/26 20:24:26 by ade-beco         ###   ########.fr       */
+/*   Updated: 2023/09/27 14:45:08 by ade-beco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	ft_show_tab(struct s_stock_str *par)
 	int	i;
 
 	i = 0;
-	while (par[i].str != NULL)
+	while (par[i].str != 0)
 	{
 		ft_putnbr(par[i].size);
 		ft_putchar('\n');
